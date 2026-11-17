@@ -1,0 +1,55 @@
+{
+  "profile": "data-package",
+  "name": "multi-speaker-diarization-francophonie-2027",
+  "title": "Protocole Méthodologique & Référentiel Open-Science (2026-2027) — Diarisation Multi-Locuteurs en Salle Réverbérante & Terminologie Institutionnelle Francophone (FR, BE, CH, CA-QC)",
+  "description": "Jeu de données ouvert (CC-BY-4.0) adossé au benchmark CNRS HAL (hal-05865820) et CERN Zenodo (10.5281/zenodo.24215193), regroupant 48 sigles et termes institutionnels francophones (France, Belgique, Suisse romande, Québec) avec leurs pièges d'homophonie phonétique en reconnaissance vocale 1 passe vs désambiguïsation contextuelle en 2 passes, ainsi qu'un corpus synthétique multi-locuteurs entièrement anonymisé (M. Martin, Mme Dubois, M. Bernard, Enquêté P1).",
+  "version": "1.0.0",
+  "created": "2026-11-16",
+  "homepage": "https://lescribeaudio.com/benchmark-diarisation-multi-locuteurs-salle-reverberante-francophonie",
+  "keywords": [
+    "diarisation multi-locuteurs",
+    "francophonie",
+    "CPPT",
+    "nLPD",
+    "Loi 25",
+    "CNESST",
+    "BAPE",
+    "CGCT",
+    "homophones ASR",
+    "transcription audio"
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0 International",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "contributors": [
+    {
+      "title": "LE SCRIBE AUDIO",
+      "role": "publisher",
+      "path": "https://lescribeaudio.com",
+      "email": "info@lescribeaudio.com"
+    }
+  ],
+  "resources": [
+    {
+      "name": "referentiel-sigles-francophonie-diarisation",
+      "path": "dataset/referentiel_sigles_francophonie_diarisation.csv",
+      "profile": "tabular-data-resource",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "encoding": "utf-8",
+      "title": "Référentiel de 48 sigles et termes institutionnels francophones (FR, BE, CH, CA-QC) : prononciation orale, pièges homophoniques ASR 1 passe et indices de désambiguïsation contextuelle 2 passes"
+    },
+    {
+      "name": "corpus-synthetique-multilocuteurs-francophonie-anonymise",
+      "path": "dataset/corpus_synthetique_multilocuteurs_francophonie_anonymise.json",
+      "format": "json",
+      "mediatype": "application/json",
+      "encoding": "utf-8",
+      "title": "Corpus synthétique multi-locuteurs entièrement anonymisé (M. Martin, Mme Dubois, M. Bernard, Enquêté P1) couvrant 4 instances francophones (France, Belgique, Suisse, Québec)"
+    }
+  ]
+}

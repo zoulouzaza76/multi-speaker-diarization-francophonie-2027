@@ -1,0 +1,97 @@
+{
+  "dataset_id": "lescribeaudio-multilocuteurs-francophonie-synthetic-eval-2027-v1",
+  "license": "CC-BY-4.0",
+  "parent_benchmarks": {
+    "cnrs_hal": "https://hal.science/hal-05865820",
+    "cern_zenodo_doi": "10.5281/zenodo.24215193"
+  },
+  "anonymization_notice": "Corpus d'évaluation 100 % synthétique construit exclusivement avec des patronymes génériques fictifs (M. Martin, Mme Dubois, M. Bernard, Enquêté P1) conformément aux règles déontologiques de LE SCRIBE AUDIO. Aucune donnée issue d'un client réel n'est utilisée.",
+  "evaluation_protocol": {
+    "purpose": "Tester conjointement la séparation des tours de parole rapides (diarisation multi-locuteurs à 3 et 4 voix avec relances courtes) et la désambiguïsation contextuelle en 2 passes des sigles institutionnels francophones (FR, BE, CH, CA-QC) sans injection lexicale préalable.",
+    "diarization_vs_pseudonymization_rule": "Le renommage global en 1 clic dans le lecteur synchronisé remplace les étiquettes de diarisation (Intervenant 1 -> M. Martin ou Enquêté P1) avant export Word (.docx) 100 % modifiable ; il ne remplace pas la réécoute humaine (2 à 3 h par heure d'audio contre 4 à 7 h de frappe manuelle, soit un temps divisé par 2) destinée à vérifier les noms propres prononcés à l'intérieur des phrases."
+  },
+  "synthetic_multi_speaker_sessions": [
+    {
+      "session_id": "BE_CPPT_COLLEGE_SYNTH_01",
+      "jurisdiction": "BE",
+      "acoustic_profile": "Salle de réunion réverbérante (RT60 ~0,9 s), micro de table central, 3 intervenants",
+      "acronyms_tested": ["CPPT", "ONSS", "SEPP", "Échevin", "CPAS"],
+      "utterances": [
+        {
+          "timecode": "00:00:08",
+          "speaker_code": "M. Martin (Président du CPPT)",
+          "verbatim_reference": "Nous ouvrons la réunion mensuelle du CPPT à quatorze heures septante-cinq dossiers administratifs ayant été régularisés auprès de l'ONSS ce trimestre. Je cède immédiatement la parole à Madame Dubois pour le rapport trimestriel du SEPP."
+        },
+        {
+          "timecode": "00:00:26",
+          "speaker_code": "Mme Dubois (Conseillère en prévention)",
+          "verbatim_reference": "Merci Président. Les visites ergonomiques réalisées avec le médecin du travail du SEPP concernent nonante-deux postes administratifs, en coordination avec l'Échevin des travaux et les équipes sociales détachées auprès du CPAS."
+        },
+        {
+          "timecode": "00:00:44",
+          "speaker_code": "M. Bernard (Délégué du personnel)",
+          "verbatim_reference": "Sur ce point précis, le CPPT demande que l'avis écrit du SEPP soit annexé intégralement au procès-verbal avant transmission au SPF Emploi."
+        }
+      ]
+    },
+    {
+      "session_id": "CH_NLPD_GRAND_CONSEIL_SYNTH_02",
+      "jurisdiction": "CH",
+      "acoustic_profile": "Salle de commission cantonale (micros pupitres col-de-cygne), 3 intervenants",
+      "acronyms_tested": ["nLPD", "PFPDT", "Grand Conseil", "SUVA", "AVS"],
+      "utterances": [
+        {
+          "timecode": "00:00:10",
+          "speaker_code": "Mme Dubois (Présidente de commission)",
+          "verbatim_reference": "En réponse au postulat déposé devant le Grand Conseil, nous examinons la mise en conformité du registre des traitements avec la nLPD et les recommandations publiées par le PFPDT."
+        },
+        {
+          "timecode": "00:00:27",
+          "speaker_code": "M. Martin (Préposé cantonal / Juriste)",
+          "verbatim_reference": "Tout à fait : huitante-quatre pour cent des flux d'archives sont hébergés en Europe avec suppression immédiate après export, sans bot de visioconférence, y compris pour les dossiers administratifs liés à l'AVS et à la prévention SUVA."
+        },
+        {
+          "timecode": "00:00:45",
+          "speaker_code": "Enquêté P1 (Auditionné HES-SO)",
+          "verbatim_reference": "Du côté des projets de recherche menés à la HES-SO, le codage des étiquettes d'intervenants facilite grandement la préparation du corpus avant notre relecture intégrale."
+        }
+      ]
+    },
+    {
+      "session_id": "QC_LOI25_CNESST_BAPE_SYNTH_03",
+      "jurisdiction": "CA-QC",
+      "acoustic_profile": "Audience hybride salle + visioconférence exportée MP4, 3 intervenants",
+      "acronyms_tested": ["Loi 25", "ÉFVP", "CAI", "CNESST", "BAPE", "Cégep"],
+      "utterances": [
+        {
+          "timecode": "00:00:06",
+          "speaker_code": "M. Bernard (Responsable RPRP)",
+          "verbatim_reference": "Conformément à l'article 17 de la Loi 25 et aux guides de la CAI, notre ÉFVP confirme que les enregistrements des comités paritaires relevant de la CNESST sont stockés chez OVHcloud en France avec chiffrement AES-256 et purge en un clic."
+        },
+        {
+          "timecode": "00:00:25",
+          "speaker_code": "Mme Dubois (Directrice des études — Cégep fictif)",
+          "verbatim_reference": "Nous appliquons le même protocole au sein du Cégep ainsi que pour l'analyse des mémoires publics déposés lors des audiences du BAPE, ce qui divise par deux le temps de préparation de nos procès-verbaux en format Word modifiable."
+        }
+      ]
+    },
+    {
+      "session_id": "FR_CSE_EPCI_SYNTH_04",
+      "jurisdiction": "FR",
+      "acoustic_profile": "Table en U de 8 personnes, enregistreur numérique stéréo .WAV, 3 intervenants",
+      "acronyms_tested": ["CSE", "CSSCT", "DUERP", "BDESE", "EPCI", "PLUi", "M57"],
+      "utterances": [
+        {
+          "timecode": "00:00:09",
+          "speaker_code": "M. Martin (Président de séance)",
+          "verbatim_reference": "Au point trois de l'ordre du jour du CSE, la mise à jour annuelle du DUERP préparée par la CSSCT a été déposée dans la BDESE dès mardi dernier."
+        },
+        {
+          "timecode": "00:00:23",
+          "speaker_code": "Mme Dubois (Secrétaire du CSE)",
+          "verbatim_reference": "Merci, et concernant l'antenne territoriale située dans le périmètre du PLUi de l'EPCI voisin, nous vérifierons également l'imputation budgétaire lors de la prochaine séance."
+        }
+      ]
+    }
+  ]
+}

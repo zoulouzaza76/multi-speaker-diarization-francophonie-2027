@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+title: "Protocole Méthodologique & Référentiel Open-Science (2026-2027) — Diarisation Multi-Locuteurs en Salle Réverbérante & Terminologie Institutionnelle Francophone (France, Belgique, Suisse, Québec)"
+message: "Si vous réutilisez ce référentiel de sigles francophones, le protocole de diarisation multi-locuteurs ou le corpus synthétique dans un travail académique, une ÉFVP/AIPD ou un cahier des charges, merci de citer ce dépôt ainsi que notre benchmark parent CNRS HAL / Zenodo."
+type: dataset
+version: "1.0.0"
+date-released: "2026-11-16"
+license: CC-BY-4.0
+url: "https://lescribeaudio.com/benchmark-diarisation-multi-locuteurs-salle-reverberante-francophonie"
+authors:
+  - name: "LE SCRIBE AUDIO"
+    website: "https://lescribeaudio.com"
+    email: "info@lescribeaudio.com"
+    tel: "+33 9 61 44 46 64"
+    country: FR
+keywords:
+  - diarisation
+  - multi-speaker-asr
+  - francophonie
+  - cppt-belgique
+  - nlpd-suisse
+  - loi-25-quebec
+  - cgct-cse
+  - transcription-audio
+references:
+  - type: report
+    title: "Benchmarks Officiels de Précision des IA de Transcription en Français (2026) — Protocole Ouvert & Rapports Microsoft Word"
+    authors:
+      - name: "LE SCRIBE AUDIO"
+    url: "https://hal.science/hal-05865820"
+    year: 2026
+  - type: dataset
+    title: "Benchmarks Officiels de Précision des IA de Transcription en Français (2026) — Corpus Canal-U & Rapports de Suivi des Modifications Microsoft Word (v1.1.0)"
+    authors:
+      - name: "LE SCRIBE AUDIO"
+    doi: "10.5281/zenodo.24215193"
+    url: "https://doi.org/10.5281/zenodo.24215193"
+    year: 2026

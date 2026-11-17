@@ -1,0 +1,56 @@
+{
+  "title": "Protocole Méthodologique & Référentiel Open-Science (2026-2027) — Diarisation Multi-Locuteurs en Salle Réverbérante & Terminologie Institutionnelle Francophone (France, Belgique, Suisse, Québec)",
+  "description": "Référentiel terminologique ouvert (CSV, 48 sigles et termes institutionnels FR, BE, CH, CA-QC), protocole méthodologique d'évaluation de la diarisation multi-locuteurs (4 à 12 voix en acoustique réverbérante) et corpus synthétique anonymisé (JSON, CC-BY-4.0) publiés par LE SCRIBE AUDIO en complément du benchmark ouvert déposé sur CNRS HAL (hal-05865820) et CERN Zenodo (10.5281/zenodo.24215193). Documente : 1) les pièges d'homophonie phonétique des sigles institutionnels francophones (CGCT, EPCI, CSSCT, DUERP, CPPT, ONSS, Échevin, Bourgmestre, CPAS, nLPD/revDSG, PFPDT, Grand Conseil, SUVA, Loi 25, ÉFVP, CNESST, BAPE, Cégep) en reconnaissance vocale acoustique 1 passe face à la désambiguïsation contextuelle en 2 passes (fenêtres de 20 min avec recouvrement de 5 s) ; 2) la distinction méthodologique entre codage global des étiquettes de diarisation (Intervenant 1 -> Enquêté P1 / M. Martin) et pseudonymisation intégrale du corps de texte ; 3) les temps humains réels de vérification (2 à 3 h par heure d'audio sur fichier Word .docx 100 % modifiable contre 4 à 7 h de frappe manuelle, soit un temps divisé par 2, ou double relecture humaine à 60 € HT/h par deux transcripteurs successifs) et l'architecture RGPD / nLPD / Loi 25 (stockage en France chez OVHcloud AES-256, inférence via Google Cloud Vertex AI en région Europe sous Zero Data Retention, transparence sur l'exposition juridique de l'éditeur Google Cloud au US Cloud Act, suppression définitive en 1 clic).",
+  "upload_type": "dataset",
+  "publication_date": "2026-11-16",
+  "version": "1.0.0",
+  "language": "fra",
+  "access_right": "open",
+  "license": "CC-BY-4.0",
+  "creators": [
+    {
+      "name": "LE SCRIBE AUDIO",
+      "affiliation": "LE SCRIBE AUDIO (France — RCS Rennes 890 049 927)"
+    }
+  ],
+  "keywords": [
+    "diarisation multi-locuteurs",
+    "transcription audio francais",
+    "francophonie institutionnelle",
+    "CPPT Belgique",
+    "nLPD Suisse",
+    "Loi 25 Québec",
+    "CNESST BAPE Cégep",
+    "CGCT CSE CSSCT",
+    "reconnaissance vocale homophones",
+    "RGPD Cloud Act"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://hal.science/hal-05865820",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-report"
+    },
+    {
+      "identifier": "10.5281/zenodo.24215193",
+      "relation": "isSupplementTo",
+      "scheme": "doi",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://lescribeaudio.com/benchmark-diarisation-multi-locuteurs-salle-reverberante-francophonie",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article"
+    },
+    {
+      "identifier": "https://lescribeaudio.com/benchmarks-precision-transcription-ia-francais",
+      "relation": "references",
+      "resource_type": "dataset"
+    },
+    {
+      "identifier": "https://lescribeaudio.com/matrice-conformite-rgpd-nlpd-loi-25-cloud-act-logiciels-transcription",
+      "relation": "references",
+      "resource_type": "publication-article"
+    }
+  ]
+}
